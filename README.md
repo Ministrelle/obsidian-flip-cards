@@ -1,7 +1,9 @@
-# obsidian-table-cards
+# obsidian-table-cards (WIP)
 This is a css snippet for the Obsidian note-taking app that turns regular tables into card-based tables. 
 
 It's heavily inspired by [Minimal Theme's](https://github.com/kepano/obsidian-minimal) card view.
+
+**WIP:** This is still very much a work in progress. While the main part works well, there are still a lot of quality of life features missing, for example support for darkmode.
 
 ## How to use this snippet?
 

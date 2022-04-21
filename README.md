@@ -25,6 +25,12 @@ cssClasses: card-table, columns-6, contain, aspect-16-9
 ---
 ```
 
+## Recommended Plugins
+
+Plugin | Use
+-- | --
+**sortable** | Allows you to sort tables
+
 ## YAML cssClasses
 
 The snippet offers the following YAML cssCLasses to change certain aspects of the snippet:

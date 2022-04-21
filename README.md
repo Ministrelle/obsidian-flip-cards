@@ -1,2 +1,4 @@
 # obsidian-table-cards
-This is a css cnippet for the Obsidian app, that turns regular tables into a card view.
+This is a css snippet for the Obsidian note-taking app that turns regular tables into card-based tables.
+
+

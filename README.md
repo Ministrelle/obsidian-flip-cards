@@ -9,7 +9,9 @@ It's heavily inspired by [Minimal Theme's](https://github.com/kepano/obsidian-mi
 
 ## How to use this snippet?
 
-To use this snippet and turn your tables into cards, add the following YAML to the top of your Obsidian document:
+To use this snippet, download `card-table.css` and put it into your vaults snippet folder.
+
+Then add the following YAML to the top of your Obsidian file in which you want to activate the car-table:
 
 ```yaml
 ---

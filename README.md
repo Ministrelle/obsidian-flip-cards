@@ -79,3 +79,7 @@ If you want to always show the entire image, no matter the aspect ratio, you can
 cssClass | Effect
 -- | --
 `contain` | Changes the image fit from **cover** to **contain**
+
+## Future plans:
+- [ ] Add support for dark mode.
+- [ ] **Maybe:** Use Style Settings to add some customization options. (Font size, color, spacing etc.)

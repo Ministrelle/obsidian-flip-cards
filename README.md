@@ -83,3 +83,4 @@ cssClass | Effect
 ## Future plans:
 - [ ] Add support for dark mode.
 - [ ] **Maybe:** Use Style Settings to add some customization options. (Font size, color, spacing etc.)
+- [ ] **Maybe:** Alternate Styles for the cards

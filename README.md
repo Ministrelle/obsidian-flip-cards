@@ -57,7 +57,7 @@ cssClass | Effect
 
 By default, the snippet decides the amount of columns by itself based on content size.
 
-If you want to always show a specific number of columns, you can use the following cssClasses:
+If you want to have a specific number of columns, you can use the following cssClasses:
 
 cssClass | Effect
 -- | --

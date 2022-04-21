@@ -5,6 +5,8 @@ It's heavily inspired by [Minimal Theme's](https://github.com/kepano/obsidian-mi
 
 **WIP:** This is still very much a work in progress. While the main part works well, there are still a lot of quality of life features missing, for example support for darkmode.
 
+![card-view-screenshot-1](https://raw.githubusercontent.com/Ministrelle/obsidian-table-cards/main/card-view-screenshot.png?token=GHSAT0AAAAAABTZJ3UMRVPTPE7IMJCAAZNEYTBL4OQ)
+
 ## How to use this snippet?
 
 To use this snippet and turn your tables into cards, add the following YAML to the top of your Obsidian document:

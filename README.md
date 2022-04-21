@@ -11,9 +11,9 @@ It's heavily inspired by [Minimal Theme's](https://github.com/kepano/obsidian-mi
 
 ## How to use this snippet?
 
-To use this snippet, download `card-table.css` and put it into your vaults snippet folder.
+To use this snippet, download `card-tables.css` and put it into your vaults snippet folder.
 
-Then add the following YAML to the top of your Obsidian file in which you want to activate the car-table:
+Then add the following YAML to the top of your Obsidian file in which you want to activate the card-table:
 
 ```yaml
 ---

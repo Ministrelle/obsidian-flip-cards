@@ -5,7 +5,7 @@ It's heavily inspired by [Minimal Theme's](https://github.com/kepano/obsidian-mi
 
 **WIP:** This is still very much a work in progress. While the main part works well, there are still a lot of quality of life features missing, for example support for darkmode.
 
-![card-view-screenshot-1](https://raw.githubusercontent.com/Ministrelle/obsidian-table-cards/main/card-view-screenshot.png?token=GHSAT0AAAAAABTZJ3UMRVPTPE7IMJCAAZNEYTBL4OQ)
+![Screenshot](https://github.com/Ministrelle/obsidian-table-cards/blob/f50dcd4fe3ad0ad5cd7e649c23ecfd3f12905353/card-view-screenshot.png)
 
 ## How to use this snippet?
 

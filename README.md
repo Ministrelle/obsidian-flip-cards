@@ -29,7 +29,8 @@ cssClasses: card-table, columns-6, contain, aspect-16-9
 
 Plugin | Use
 -- | --
-**sortable** | Allows you to sort tables
+**Sortable** | Allows you to sort tables
+**Contextual Typography** | Probably not needed, but not having it might break some things ... need to check \\(-_-)/
 
 ## YAML cssClasses
 

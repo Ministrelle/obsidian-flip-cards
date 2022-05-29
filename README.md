@@ -44,6 +44,16 @@ Plugin | Use
 **Advanced Tables** | Makes working with tables easier and faster.
 **Dataview** | Necessary to create dataview tables which come with filtering options.
 
+## Additional Features
+
+The snippet comes with a bunch of additional features that can be toggled by adding certain keywords to the YAML.
+
+### Page Width
+
+### Columns
+
+### Aspect Ratio
+
 ---
 
 This is a css snippet for the Obsidian note-taking app that turns regular markdown tables into card-based tables. 
@@ -55,27 +65,6 @@ It's heavily inspired by [Minimal Theme's](https://github.com/kepano/obsidian-mi
 ![Screenshot](https://github.com/Ministrelle/obsidian-table-cards/blob/f50dcd4fe3ad0ad5cd7e649c23ecfd3f12905353/card-view-screenshot.png)
 
 ![Screenshot-2](https://github.com/Ministrelle/obsidian-table-cards/blob/bae5cbd3263d902ec41750f45ea5a6dcd6a4a484/card-view-screenshot-2%20(2).png)
-
-## How to use this snippet?
-
-To use this snippet, download `card-tables.css` and put it into your vaults snippet folder.
-
-Then add the following YAML to the top of your Obsidian file in which you want to activate the card-table:
-
-```yaml
----
-cssClasses: card-table
----
-```
-
-You can then change some aspects of the cards, as described below, by applying additional cssClasses to the document. e.g:
-
-```yaml
----
-cssClasses: card-table, columns-6, contain, aspect-16-9
----
-```
-
 
 ## YAML cssClasses
 

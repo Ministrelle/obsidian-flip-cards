@@ -1,6 +1,50 @@
 # Obsidian Flip Cards (WIP)
 
-! Readme currently in the process of being reworked.
+Obsidian Flip Cards is a snippet created for the Obsidian note taking app, that turns markdown tables into flip cards as shown in the images below.
+
+## Installation
+
+To install this snippet, simply download **flip-cards.css** and place it into Obsidians **snippet** folder.
+
+## Usage
+
+To use the snippet within your files, add the following YAML to the top of your file:
+
+```yaml
+---
+cssClasses: cards
+---
+```
+
+In addition, for the cards to display correctly, the first column of the table **HAS** to be the image. It is recommended that the 2nd column be used for the title as it is specifically styled to be used for titles.
+
+```markdown
+|            Cover Image           |        Title       | ... | ... |
+| -------------------------------- | ------------------ | --- | --- |
+| ![[image.png]] OR ![](image.png) | [[Title]] or Title | ... | ... |
+```
+
+The same has to apply for dataview tables. Below is an example of how such a dataview table might look like.
+
+```dataview
+TABLE WITHOUT ID
+    cover AS "Cover",
+    "[[" + file.name + "]]" AS "Title"
+    ... AS "...",
+    ... AS "..."
+ FROM ...
+ SORT ...
+```
+
+## Recommended Plugins
+
+Plugin | Use
+-- | --
+**Sortable** | Necessary to make tables sortable.
+**Advanced Tables** | Makes working with tables easier and faster.
+**Dataview** | Necessary to create dataview tables which come with filtering options.
+
+---
 
 This is a css snippet for the Obsidian note-taking app that turns regular markdown tables into card-based tables. 
 
@@ -32,12 +76,6 @@ cssClasses: card-table, columns-6, contain, aspect-16-9
 ---
 ```
 
-## Recommended Plugins
-
-Plugin | Use
--- | --
-**Sortable** | Allows you to sort tables
-**Contextual Typography** | Probably not needed, but not having it might break some things ... need to check \\(-_-)/
 
 ## YAML cssClasses
 

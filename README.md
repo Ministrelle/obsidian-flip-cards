@@ -2,6 +2,10 @@
 
 Obsidian Flip Cards is a snippet created for the Obsidian note taking app, that turns markdown tables into flip cards as shown in the images below.
 
+...
+
+...
+
 ## Installation
 
 To install this snippet, simply download **flip-cards.css** and place it into Obsidians **snippet** folder.
@@ -59,12 +63,6 @@ The snippet comes with a bunch of additional features that can be toggled by add
 This is a css snippet for the Obsidian note-taking app that turns regular markdown tables into card-based tables. 
 
 It's heavily inspired by [Minimal Theme's](https://github.com/kepano/obsidian-minimal) card view.
-
-**WIP:** This is still very much a work in progress. While the main part works well, there are still a lot of quality of life features missing, for example support for darkmode.
-
-![Screenshot](https://github.com/Ministrelle/obsidian-table-cards/blob/f50dcd4fe3ad0ad5cd7e649c23ecfd3f12905353/card-view-screenshot.png)
-
-![Screenshot-2](https://github.com/Ministrelle/obsidian-table-cards/blob/bae5cbd3263d902ec41750f45ea5a6dcd6a4a484/card-view-screenshot-2%20(2).png)
 
 ## YAML cssClasses
 

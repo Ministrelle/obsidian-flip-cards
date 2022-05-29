@@ -1,4 +1,5 @@
-# obsidian-table-cards (WIP)
+# Obsidian Flip Cards (WIP)
+
 This is a css snippet for the Obsidian note-taking app that turns regular markdown tables into card-based tables. 
 
 It's heavily inspired by [Minimal Theme's](https://github.com/kepano/obsidian-minimal) card view.
@@ -81,6 +82,6 @@ cssClass | Effect
 `contain` | Changes the image fit from **cover** to **contain**
 
 ## Future plans:
-- [ ] Add support for dark mode.
+- [x] Add support for dark mode.
 - [ ] **Maybe:** Use Style Settings to add some customization options. (Font size, color, spacing etc.)
-- [ ] **Maybe:** Alternate Styles for the cards
+- [x] **Maybe:** Alternate Styles for the cards

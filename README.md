@@ -1,5 +1,7 @@
 # Obsidian Flip Cards (WIP)
 
+! Readme currently in the process of being reworked.
+
 This is a css snippet for the Obsidian note-taking app that turns regular markdown tables into card-based tables. 
 
 It's heavily inspired by [Minimal Theme's](https://github.com/kepano/obsidian-minimal) card view.

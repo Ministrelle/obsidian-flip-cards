@@ -1,0 +1,384 @@
+.theme-light {
+    --text: #000;
+    --icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100"><path fill="black" d="M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z"></path></svg>');
+    --border: rgba(0, 0, 0, 0.5);
+    --shadow: rgba(0, 0, 0, 1);
+}
+
+.theme-dark {
+    --text: #fff;
+    --icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100"><path fill="white" d="M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z"></path></svg>');
+    --border: rgba(255, 255, 255, 0.5);
+    --shadow: rgba(0, 0, 0, 1);
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.cards table {
+    width: 100%;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.cards table thead {
+    display: block;
+    width: 225px;
+    float: right;
+    position: relative;
+    height: 24px;
+    z-index: 3;
+}
+
+.cards table thead:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0;
+    height: 100%;
+    padding-right: 18px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 12px;
+    background-image: var(--icon);
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.cards table thead tr {
+    display: none;
+}
+
+.cards table thead:hover tr {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-primary);
+    margin-top: 24px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.cards table thead tr th {
+    font-weight: 400;
+    text-align: left;
+    border: none !important;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.cards table tbody {
+    clear: both;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.cards table tbody tr {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* --- */
+    position: relative;
+    aspect-ratio: 3/4;
+    overflow-y: scroll;
+    box-shadow: 0 5px 10px var(--shadow);
+    border-radius: 12px;
+}
+
+.cards table tbody tr:hover {
+    border: 1px solid var(--border);
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.cards table tbody tr td {
+    white-space: nowrap;
+    overflow-x: clip;
+    text-overflow: ellipsis;
+    z-index: 1;
+    border: none !important;
+    display: none;
+    font-size: 10px;
+}
+
+.cards table tbody tr:hover td {
+    display: block;
+    white-space: normal;
+}
+
+.cards table tbody tr:hover td:empty {
+    display: none;
+}
+
+.cards table tbody tr td:first-child {
+    padding: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+}
+
+.cards table tbody tr td:nth-child(2) {
+    margin-top: auto;
+    font-size: 12px;
+    display: block;
+    color: #fff;
+    background-color: rgba(0,0,0,.5);
+}
+
+.cards table tbody tr td:nth-child(2):empty {
+    display: none;
+}
+
+.cards table tbody tr:hover td:nth-child(2) {
+    margin-top: 0px;
+    background: none;
+    white-space: normal;
+    overflow-x: unset;
+    text-overflow: unset;
+    text-align: left;
+    text-decoration: underline;
+    color: var(--text);
+    z-index: 2;
+    padding-top: 6px;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.cards table tbody tr td img {
+    object-fit: cover;
+    vertical-align: bottom;
+    width: 100%;
+    aspect-ratio: 3/4;    
+}
+
+.cards table tbody tr:hover td img {
+     display: none;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.cards table tbody tr td:nth-child(2) a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.cards table tbody tr:hover td:nth-child(2) a {
+    color: var(--text);
+    display: block;
+    width: 100%;
+    padding-bottom: 200%;
+    margin-bottom: -200%;
+}
+
+.cards table tbody tr td .internal-link.is-unresolved {
+    opacity: 1;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.ratio-2-3 table tbody tr td img,
+.ratio-2-3 table tbody tr {
+    aspect-ratio: 2/3;
+}
+
+.ratio-1-1 table tbody tr td img,
+.ratio-1-1 table tbody tr {
+    aspect-ratio: 1/1;
+}
+
+.ratio-16-9 table tbody tr td img,
+.ratio-16-9 table tbody tr {
+    aspect-ratio: 16/9;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.columns-1 table tbody {
+    grid-template-columns: repeat(1,minmax(0,1fr))
+}
+
+.columns-2 table tbody {
+    grid-template-columns: repeat(2,minmax(0,1fr))
+}
+
+.columns-3 table tbody {
+    grid-template-columns: repeat(3,minmax(0,1fr))
+}
+
+.columns-4 table tbody {
+    grid-template-columns: repeat(4,minmax(0,1fr))
+}
+
+.columns-5 table tbody {
+    grid-template-columns: repeat(5,minmax(0,1fr))
+}
+
+.columns-6 table tbody {
+    grid-template-columns: repeat(6,minmax(0,1fr))
+}
+
+.columns-7 table tbody {
+    grid-template-columns: repeat(7,minmax(0,1fr))
+}
+
+.columns-8 table tbody {
+    grid-template-columns: repeat(8,minmax(0,1fr))
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.page-10 .markdown-preview-sizer,
+.page-10 .cm-contentContainer {
+    max-width: 10% !important;
+}
+
+.page-20 .markdown-preview-sizer,
+.page-20 .cm-contentContainer  {
+    max-width: 20% !important;
+}
+
+.page-30 .markdown-preview-sizer,
+.page-30 .cm-contentContainer  {
+    max-width: 30% !important;
+}
+
+.page-40 .markdown-preview-sizer,
+.page-40 .cm-contentContainer  {
+    max-width: 40% !important;
+}
+
+.page-50 .markdown-preview-sizer,
+.page-50 .cm-contentContainer  {
+    max-width: 50% !important;
+}
+
+.page-60 .markdown-preview-sizer,
+.page-60 .cm-contentContainer  {
+    max-width: 60% !important;
+}
+
+.page-70 .markdown-preview-sizer,
+.page-70 .cm-contentContainer  {
+    max-width: 70% !important;
+}
+
+.page-80 .markdown-preview-sizer,
+.page-80 .cm-contentContainer {
+    max-width: 80% !important;
+}
+
+.page-80 .cm-content,
+.page-80 .cm-line {
+    max-width: 100% !important;
+}
+
+.page-90 .markdown-preview-sizer,
+.page-90 .cm-contentContainer  {
+    max-width: 90% !important;
+}
+
+.page-100 .markdown-preview-sizer,
+.page-100 .cm-contentContainer  {
+    max-width: 100% !important;
+}
+
+.page-10 .cm-content,
+.page-20 .cm-content,
+.page-30 .cm-content,
+.page-40 .cm-content,
+.page-50 .cm-content,
+.page-60 .cm-content,
+.page-70 .cm-content,
+.page-80 .cm-content,
+.page-90 .cm-content,
+.page-100 .cm-content,
+.page-10 .cm-line,
+.page-20 .cm-line,
+.page-30 .cm-line,
+.page-40 .cm-line,
+.page-50 .cm-line,
+.page-60 .cm-line,
+.page-70 .cm-line,
+.page-80 .cm-line,
+.page-90 .cm-line,
+.page-100 .cm-line {
+    max-width: 100% !important;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.dataview tbody tr {
+    margin: 0 !important;
+    text-align: inherit !important;
+}
+
+
+.dataview thead tr {
+    margin-top: 24px !important;
+    margin-bottom: 0 !important;
+    text-align: inherit !important;
+}
+
+.dataview thead tr th {
+    font-size: inherit !important;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.show-2 table tbody tr td:nth-child(3),
+.show-3 table tbody tr td:nth-child(3),
+.show-3 table tbody tr td:nth-child(4),
+.show-4 table tbody tr td:nth-child(3),
+.show-4 table tbody tr td:nth-child(4),
+.show-4 table tbody tr td:nth-child(5) {
+    display: block;
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+}
+
+.show-2 table tbody tr td:nth-child(3):empty,
+.show-3 table tbody tr td:nth-child(3):empty,
+.show-3 table tbody tr td:nth-child(4):empty,
+.show-4 table tbody tr td:nth-child(3):empty,
+.show-4 table tbody tr td:nth-child(4):empty,
+.show-4 table tbody tr td:nth-child(5):empty {
+    display: none;
+}
+
+.show-2 table tbody tr:hover td:nth-child(3),
+.show-3 table tbody tr:hover td:nth-child(3),
+.show-3 table tbody tr:hover td:nth-child(4),
+.show-4 table tbody tr:hover td:nth-child(3),
+.show-4 table tbody tr:hover td:nth-child(4),
+.show-4 table tbody tr:hover td:nth-child(5) {
+    background: none;
+    color: var(--text);
+}
+
+.show-2 table tbody tr td:nth-child(2):empty + td,
+.show-3 table tbody tr td:nth-child(2):empty + td,
+.show-3 table tbody tr td:nth-child(2):empty + td:empty + td,
+.show-4 table tbody tr td:nth-child(2):empty + td,
+.show-4 table tbody tr td:nth-child(2):empty + td:empty + td,
+.show-4 table tbody tr td:nth-child(2):empty + td:empty + td:empty + td {
+    margin-top: auto;
+}
+
+.show-2 table tbody tr:hover td:nth-child(2):empty + td,
+.show-3 table tbody tr:hover td:nth-child(2):empty + td,
+.show-3 table tbody tr:hover td:nth-child(2):empty + td:empty + td,
+.show-4 table tbody tr:hover td:nth-child(2):empty + td,
+.show-4 table tbody tr:hover td:nth-child(2):empty + td:empty + td,
+.show-4 table tbody tr:hover td:nth-child(2):empty + td:empty + td:empty + td {
+    margin-top: 0px;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+::-webkit-scrollbar {
+    display: none;
+}

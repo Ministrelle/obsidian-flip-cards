@@ -48,6 +48,19 @@ Plugin | Use
 **Advanced Tables** | Makes working with tables easier and faster.
 **Dataview** | Necessary to create dataview tables which come with filtering options.
 
+## Compatibility
+
+Due to each obsidian theme having it's own styling, some parts of the flip cards may break. Below is a list of theme's for which I have checked and adjusted the code so that it "shouldn't" break.
+
+- Obsidian Base Theme
+- Minimal
+- Blue Topaz (limited)
+- Things
+- Yin and Yang
+- Atom
+- Deep Work
+- California Coast
+
 ## Additional Features
 
 The snippet comes with a bunch of additional features that can be toggled by adding certain keywords to the YAML.

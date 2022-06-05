@@ -125,4 +125,5 @@ cssClass | Effect
 - [x] Add support for dark mode.
 - [ ] **Maybe:** Use Style Settings to add some customization options. (Font size, color, spacing etc.)
 - [x] **Maybe:** Alternate Styles for the cards
-- [ ] When hovering over a card that is only half shown, the screen shackes when the flip happens. Need to look at what causes this to happen and fix it. Only happens if the card in question has an iamge, so I assume it has something to do with the iamge. Maybe it being hidden when flipped or something.
+- [x] When hovering over a card that is only half shown, the screen shackes when the flip happens. Need to look at what causes this to happen and fix it. Only happens if the card in question has an iamge, so I assume it has something to do with the iamge. Maybe it being hidden when flipped or something.
+- [ ] Do some code clean up
